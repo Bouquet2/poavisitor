@@ -5,15 +5,15 @@ package fr.paris10.poa.td5.visiteur;
  */
 public interface Visiteur {
 
-    public void visit(Univers o);
-    public void visit(Piece o);
-    public void visit(Bureau o);
-    public void visit(GardeRobe o);
-    public void visit(Vetement o);
-    public void visit(Lit o);
-    public void visit(CollectionLivres o);
-    public void visit(Lampe o);
-    public void visit(Livre o);
-    public void visit(Porte o);
-    public void visit(Tiroir o);
+    void visit(Univers o);
+    void visit(Piece o);
+    void visit(Bureau o);
+    void visit(GardeRobe o);
+    void visit(Vetement o);
+    void visit(Lit o);
+    void visit(CollectionLivres o);
+    void visit(Lampe o);
+    void visit(Livre o);
+    void visit(Porte o);
+    void visit(Tiroir o);
 }

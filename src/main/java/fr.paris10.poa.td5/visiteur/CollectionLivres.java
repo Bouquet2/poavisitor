@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Created by vabouque on 07/11/2016.
  */
-public class CollectionLivres {
+public class CollectionLivres implements PetitObjetBasique{
     private String name;
     private ArrayList<Livre> livres;
 
@@ -23,8 +23,19 @@ public class CollectionLivres {
         v.visit(this);
     }
 
+    public void test() {
+        return ;
+    }
     public void addObjet(Livre livre) {
         livres.add(livre);
+    }
+
+    public ArrayList<Livre> getLivres() {
+        return livres;
+    }
+
+    public void setLivres(ArrayList<Livre> livres) {
+        this.livres = livres;
     }
 
     @Override

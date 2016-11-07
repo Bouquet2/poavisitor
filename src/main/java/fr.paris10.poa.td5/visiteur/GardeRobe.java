@@ -28,6 +28,10 @@ public class GardeRobe implements ObjetBasique{
         v.visit(this);
     }
 
+    public ArrayList<Vetement> getVetements() {
+        return vetements;
+    }
+
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("GardeRobe{");

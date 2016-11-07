@@ -10,21 +10,33 @@ public class VisiteurComptage implements Visiteur {
     @Override
     public void visit(Univers o) {
         compte++;
+        for (Piece p : o.getPieces()) {
+            p.accept(this);
+        }
     }
 
     @Override
     public void visit(Piece o) {
         compte++;
+        for (ObjetBasique ob : o.getObjetsBasiques()) {
+            ob.accept(this);
+        }
     }
 
     @Override
     public void visit(Bureau o) {
         compte++;
+        for (PetitObjetBasique po : o.getObjets()) {
+            po.accept(this);
+        }
     }
 
     @Override
     public void visit(GardeRobe o) {
         compte++;
+        for (Vetement v : o.getVetements()) {
+            v.accept(this);
+        }
     }
 
     @Override
@@ -40,6 +52,9 @@ public class VisiteurComptage implements Visiteur {
     @Override
     public void visit(CollectionLivres o) {
         compte++;
+        for (Livre l : o.getLivres()) {
+            l.accept(this);
+        }
     }
 
     @Override
@@ -66,7 +81,7 @@ public class VisiteurComptage implements Visiteur {
         compte = 0;
     }
 
-    public double compte() {
-        return this.compte;
+    public static int getCompte() {
+        return compte;
     }
 }

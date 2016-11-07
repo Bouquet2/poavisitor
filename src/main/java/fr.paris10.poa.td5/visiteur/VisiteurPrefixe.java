@@ -25,11 +25,17 @@ public class VisiteurPrefixe implements Visiteur {
     @Override
     public void visit(Bureau o) {
         o.toString();
+        for (PetitObjetBasique po : o.getObjets()) {
+            po.accept(this);
+        }
     }
 
     @Override
     public void visit(GardeRobe o) {
         o.toString();
+        for (Vetement v : o.getVetements()) {
+            v.accept(this);
+        }
     }
 
     @Override
@@ -45,6 +51,9 @@ public class VisiteurPrefixe implements Visiteur {
     @Override
     public void visit(CollectionLivres o) {
         o.toString();
+        for (Livre l : o.getLivres()) {
+            l.accept(this);
+        }
     }
 
     @Override
@@ -66,4 +75,6 @@ public class VisiteurPrefixe implements Visiteur {
     public void visit(Tiroir o) {
         o.toString();
     }
+
+
 }

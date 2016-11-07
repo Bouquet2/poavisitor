@@ -28,7 +28,9 @@ public class Bureau implements ObjetBasique{
         v.visit(this);
     }
 
-
+    public ArrayList<PetitObjetBasique> getObjets() {
+        return objets;
+    }
 
     @Override
     public String toString() {
