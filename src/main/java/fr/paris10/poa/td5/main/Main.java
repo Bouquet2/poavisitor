@@ -56,6 +56,8 @@ public class Main {
         System.out.println("Visiteur compte : " + VisiteurComptage.getCompte());
         Visiteur visiteur2 = new VisiteurPrefixe();
         cl.accept(visiteur2);
+        Visiteur visiteur3 = new VisiteurSuffixe();
+        cl.accept(visiteur3);
 
 
     }

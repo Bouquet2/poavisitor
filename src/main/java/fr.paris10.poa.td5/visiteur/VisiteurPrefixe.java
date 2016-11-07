@@ -5,7 +5,6 @@ package fr.paris10.poa.td5.visiteur;
  */
 public class VisiteurPrefixe implements Visiteur {
 
-    //TODO visit
     @Override
     public void visit(Univers o) {
         System.out.println(o.toString());
