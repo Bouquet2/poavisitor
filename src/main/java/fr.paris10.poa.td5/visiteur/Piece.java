@@ -34,7 +34,6 @@ public class Piece {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Piece{");
-        sb.append("name='").append(name).append('\'');
         sb.append('}');
         return sb.toString();
     }

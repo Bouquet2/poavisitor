@@ -42,7 +42,6 @@ public class CollectionLivres implements PetitObjetBasique{
     public String toString() {
         final StringBuilder sb = new StringBuilder("CollectionLivres{");
         sb.append("name='").append(name).append('\'');
-        sb.append(", livres=").append(livres);
         sb.append('}');
         return sb.toString();
     }

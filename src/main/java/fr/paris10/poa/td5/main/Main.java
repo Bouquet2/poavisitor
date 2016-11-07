@@ -44,17 +44,18 @@ public class Main {
         Univers u = new Univers("Mon univers");
 
         u.addObjet(p);
-        u.addObjet(p2);
+        //u.addObjet(p2);
 
 
         /*
         Visiteur
          */
         VisiteurComptage visiteur = new VisiteurComptage();
-        u.accept(visiteur);
+        //u.accept(visiteur);
+        cl.accept(visiteur);
         System.out.println("Visiteur compte : " + VisiteurComptage.getCompte());
         Visiteur visiteur2 = new VisiteurPrefixe();
-        u.accept(visiteur2);
+        cl.accept(visiteur2);
 
 
     }

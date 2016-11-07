@@ -36,7 +36,6 @@ public class Bureau implements ObjetBasique{
     public String toString() {
         final StringBuilder sb = new StringBuilder("Bureau{");
         sb.append("name='").append(name).append('\'');
-        sb.append(", objets=").append(objets);
         sb.append('}');
         return sb.toString();
     }

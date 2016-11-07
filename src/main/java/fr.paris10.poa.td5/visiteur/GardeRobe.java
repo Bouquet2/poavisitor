@@ -36,7 +36,6 @@ public class GardeRobe implements ObjetBasique{
     public String toString() {
         final StringBuilder sb = new StringBuilder("GardeRobe{");
         sb.append("name='").append(name).append('\'');
-        sb.append(", vetements=").append(vetements);
         sb.append('}');
         return sb.toString();
     }

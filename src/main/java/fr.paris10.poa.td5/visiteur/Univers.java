@@ -37,7 +37,6 @@ public class Univers {
     public String toString() {
         final StringBuilder sb = new StringBuilder("Univers{");
         sb.append("pieces=").append(pieces);
-        sb.append(", name='").append(name).append('\'');
         sb.append('}');
         return sb.toString();
     }
